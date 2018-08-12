@@ -1,0 +1,12 @@
+name="Advanced Armor Plate Mod 2.5";
+tooltipOwned="made by V.Berlioz, Revolver Ocelot, and Sonic.T";
+picture="AAPM.paa";
+hidePicture=0;
+hideName=0;
+actionName = "Website";
+action = "http://blog.naver.com/dudgur90/221064231110";
+logoSmall = "AAPM.paa";
+logo = "AAPM.paa";
+logoOver = "AAPM.paa";
+description = "Overhaul Infantry Damage Module";
+overview = "Advanced Armor Plate Mod";
