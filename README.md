@@ -4,7 +4,7 @@
 
 ##### - The mod is open-source. Modify it, redistribute it, host it. Do whatever you please. We actually care about the community having a good experience, not our own copyright.
 ##### - AAPM is benched for people with an IQ in the triple digits. Remember that.
-##### - You are absolutely free to make use of AAPM for your server and/or unit. Feel free to shoot V. Berlioz, Revolver Ocelot, and/or Rancorusia a friend request if you have questions about the mod.
+##### - You are absolutely free to make use of AAPM for your server and/or unit. Feel free to shoot V. Berlioz, Revolver Ocelot, Rancorusia, and/or Sysroot/FileStream a friend request if you have questions about the mod.
 ##### - We are under no obligation to help you. Requests come first-come-first-serve.
 
 ## IMPORTANT NOTES:
