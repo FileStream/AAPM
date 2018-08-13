@@ -15,5 +15,5 @@
 
 ## CONTACT US:
 
-* Issues with AAPM should be filed using Github's issue tracker unless it is **absolutely necessary** to contact us otherwise.
+* Issues with AAPM should be filed using Github's issue tracker unless it is **absolutely necessary** to do otherwise.
 * If you want the latest news about AAPM or just want to ask us questions, come [join our Discord.](https://discord.gg/HjHP8aH)
