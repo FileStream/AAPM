@@ -91,7 +91,12 @@ class CfgFunctions{
 				description = "make settings bar on the map";
 			};
 			class ManInit{
+				preInit = 1;
 				description="Sonict vest initializing manbase units";
+			};
+			class Ragdoll{
+				postInit = 1;
+				description="Make people fall if hit too hard.";
 			};
 			
 			class ChangeSettings {
