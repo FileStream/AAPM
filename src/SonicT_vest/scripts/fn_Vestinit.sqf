@@ -19,10 +19,11 @@ FUNC_OVERHAULARMOR = { //Revise hitpoint values of armor
 
 FUNC_forEachPlateDmg = { //Calculates damage absorbed by plate
 
-	params["_plate", "_dmgleft", "_hitindex", "_padset", "_AP"]; //Plate data (stored in the format of [name,hp]), damage taken, damaged hitpoint, padding, AP bonus, plate level, and plate material.
+	params["_plate", "_dmgleft", "_hitindex", "_padset", "_AP", "_PL"]; //Plate data (stored in the format of [name,hp]), damage taken, damaged hitpoint, padding, AP bonus.
 	
 	_AP = getNumber (configFile >> "cfgAmmo" >> _dmgfrom >> "AP");
-	//_PL = getNumber (configFile >> "cfgMagazines" >> _name >> "PL");
+	_PL = getNumber (configFile >> "cfgMagazines" >> _name >> "SCT_ITEMINFO" >> "PL");
+	//_CMP = getNumber (configFile >> "cfgMagazines" >> _name >> "SCT_ITEMINFO" >> "CMP");
 	//_Type = getNumber (configFile >> "cfgMagazines" >> _name >> "Type");
 	_name = _plate select 0;
 	_hp = _plate select 1;
@@ -47,7 +48,7 @@ FUNC_forEachPlateDmg = { //Calculates damage absorbed by plate
 	_impactdam = (_dmgleft - _prot) max (_dmgleft/((_padset * _impactabs)+1)); //Calculate impact damage
 	
 	if(_impactdam > 0.001) then {
-		_platedmg = floor(_hp - (_impactdam + _AP)); //Calculate plate's new hp
+		_platedmg = floor(_hp - (_impactdam + _AP - (_PL * _PL) max 0)); //Calculate plate's new hp
 	};
 
 	_output = [_impactdam, _platedmg]; 
