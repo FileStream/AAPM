@@ -1149,40 +1149,44 @@ class CfgMagazines {
 	class CA_Magazine;
 	class 30Rnd_556x45_Stanag;
 	
-	class BER_REPAIR_24: CA_Magazine {
-		scope = 2;
-		allowedSlots[] = {701};
-		displayName = "(Repair) Flex Tape x24";
-		picture = "\SCT\addons\SonicT_vest\data\flextape.paa";
-		model = "\SCT\addons\SonicT_vest\data\objects\24chargeflextape.p3d"
-		descriptionShort = "24 Patches of Flex Tape<br />For when you've sawed this boat in half!";
-		mass = 90;
-		count = 24;
-
-	};
+	class BER_REPAIR: CA_Magazine {
 	
-	class BER_REPAIR_12: CA_Magazine {
-		scope = 2;
-		allowedSlots[] = {701};
-		displayName = "(Repair) Flex Tape x12";
-		picture = "\SCT\addons\SonicT_vest\data\flextape.paa";
-		model = "\SCT\addons\SonicT_vest\data\objects\24chargeflextape.p3d"
-		descriptionShort = "12 Patches of Flex Tape<br />For when you need to fix a lotta damage!";
-		mass = 62;
-		count = 12;
+		class BER_REPAIR_24 {
+			scope = 2;
+			allowedSlots[] = {701};
+			displayName = "(Repair) Flex Tape x24";
+			picture = "\SCT\addons\SonicT_vest\data\flextape.paa";
+			model = "\SCT\addons\SonicT_vest\data\objects\24chargeflextape.p3d"
+			descriptionShort = "24 Patches of Flex Tape<br />For when you've sawed this boat in half!";
+			mass = 90;
+			count = 24;
 
-	};
+		};
 	
-	class BER_REPAIR_6: CA_Magazine {
-		scope = 2;
-		allowedSlots[] = {701};
-		displayName = "(Repair) Flex Tape x6";
-		picture = "\SCT\addons\SonicT_vest\data\flextape.paa";
-		model = "\SCT\addons\SonicT_vest\data\objects\24chargeflextape.p3d"
-		descriptionShort = "6 Patches of Flex Tape<br />Seal and repair!";
-		mass = 31;
-		count = 6;
+		class BER_REPAIR_12 {
+			scope = 2;
+			allowedSlots[] = {701};
+			displayName = "(Repair) Flex Tape x12";
+			picture = "\SCT\addons\SonicT_vest\data\flextape.paa";
+			model = "\SCT\addons\SonicT_vest\data\objects\24chargeflextape.p3d"
+			descriptionShort = "12 Patches of Flex Tape<br />For when you need to fix a lotta damage!";
+			mass = 62;
+			count = 12;
 
+		};
+	
+		class BER_REPAIR_6 {
+			scope = 2;
+			allowedSlots[] = {701};
+			displayName = "(Repair) Flex Tape x6";
+			picture = "\SCT\addons\SonicT_vest\data\flextape.paa";
+			model = "\SCT\addons\SonicT_vest\data\objects\24chargeflextape.p3d"
+			descriptionShort = "6 Patches of Flex Tape<br />Seal and repair!";
+			mass = 31;
+			count = 6;
+
+		};
+		
 	};
 
 	class AAPM_Item_Base_magtype: CA_Magazine {
