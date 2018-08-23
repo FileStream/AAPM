@@ -426,7 +426,7 @@ FUNC_EVENTDMGHANDLE = { //Runs every time unit takes damage
 
 FUNC_FLEXMENU = {
 params["_unit"];
-_unit execVM "fn_Flextape.sqf";
+_unit execVM "\SCT\addons\SonicT_vest\scripts\fn_Flextape.sqf";
 };
 
 
