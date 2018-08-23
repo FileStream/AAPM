@@ -1,5 +1,9 @@
-params["_unit","_amt"];
+params["_unit"];
 
+[_unit] call SETACTION;
+
+FN_GETTAPE = {
+	params["_unit","_amt"];
 	_tapes = []; //Collection of all flex tape
 	_inv = backpackContainer _unit; //Get backpack inventory
 
@@ -26,3 +30,9 @@ if (_amt==0) then {
 count _tapes
 };
 
+};
+
+FN_SETACTION = {
+params["_unit"];
+_tapeAction = _unit addAction [format ["<t color='#efd615'>Use Flex-Tape (x%1)</t>", [_unit,0] call FN_GETTAPE], {[_unit,1] call FN_GETTAPE; _unit removeAction _tapeAction; [_unit] call FN_SETACTION}];
+};
