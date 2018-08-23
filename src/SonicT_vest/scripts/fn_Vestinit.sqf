@@ -426,14 +426,16 @@ FUNC_EVENTDMGHANDLE = { //Runs every time unit takes damage
 
 FUNC_FLEXMENU = {
 params["_unit"];
-
-_unit addAction ["<t color='#efd615'>Use Flex-Tape</t>", {_unit execVM "fn_Flextape.sqf"}];
+_amount = [_unit,0] execVM "fn_Flextape.sqf";
+_tapeAction = _unit addAction [format ["<t color='#efd615'>Use Flex-Tape (x%1)</t>",_amount], {[_unit,1] execVM "fn_Flextape.sqf"; _unit removeAction _tapeAction}];
 };
 
 
 [_unit] call FUNC_CHECKPLATE;
 
 [_unit] call FUNC_FLEXMENU;
+
+_tapeAction = 0;
 
 if(_ace == 1) then {
 _unit addEventHandler["HandleDamage", {[_this select 0, _this select 1, _this call FUNC_EVENTDMGHANDLE, _this select 3, _this select 4, _this select 5, _this select 6] call ACE_medical_fnc_handleDamage;}];
