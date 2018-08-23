@@ -433,9 +433,9 @@ _tapeAction = _unit addAction [format ["<t color='#efd615'>Use Flex-Tape (x%1)</
 
 [_unit] call FUNC_CHECKPLATE;
 
-[_unit] call FUNC_FLEXMENU;
-
 _tapeAction = 0;
+
+[_unit] call FUNC_FLEXMENU;
 
 if(_ace == 1) then {
 _unit addEventHandler["HandleDamage", {[_this select 0, _this select 1, _this call FUNC_EVENTDMGHANDLE, _this select 3, _this select 4, _this select 5, _this select 6] call ACE_medical_fnc_handleDamage;}];
