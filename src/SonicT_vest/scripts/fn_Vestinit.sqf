@@ -427,7 +427,7 @@ FUNC_EVENTDMGHANDLE = { //Runs every time unit takes damage
 FUNC_FLEXMENU = {
 params["_unit"];
 _amount = [_unit,0] execVM "fn_Flextape.sqf";
-_tapeAction = _unit addAction [format ["<t color='#efd615'>Use Flex-Tape (x%1)</t>",_amount], {[_unit,1] execVM "fn_Flextape.sqf"; _unit removeAction _tapeAction}];
+_tapeAction = _unit addAction [format ["<t color='#efd615'>Use Flex-Tape (x%1)</t>",_amount], {[_unit,1] execVM "fn_Flextape.sqf"; _unit removeAction _tapeAction; [_unit] call FUNC_FLEXMENU}];
 };
 
 
